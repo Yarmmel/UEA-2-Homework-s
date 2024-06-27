@@ -1,0 +1,49 @@
+
+// declaro variable de imagen
+PImage familia;
+
+PImage dolor;
+
+PImage rechazo;
+
+PImage soledad;
+
+PImage anhelo;
+
+void setup() {
+  //tamaño completo de lienzo
+  fullScreen();
+  //ruta de imagen
+  familia = loadImage("assets/familia.jpeg");
+  
+  dolor = loadImage("assets/dolor.jpeg");
+  
+  rechazo = loadImage("assets/rechazo.jpeg");
+  
+  soledad = loadImage("assets/soledad.jpeg");
+  
+  anhelo = loadImage("assets/anhelo.jpeg");
+  
+}
+void draw() {
+  background(255, 0, 220);
+  image(familia, 0, 0);
+}
+void keyPressed() {
+  if (key=='f' || key == 'F') {
+  background(255);
+  image(dolor,0,0);
+  }
+  if (key=='a' || key == 'A') {
+    background(255);
+    image(rechazo, 0, 0);
+  }
+  if (key=='m' || key == 'M') {
+    background(255);
+    image(soledad, 0, 0);
+  }
+  if (key=='i' || key == 'I') {
+    background(255);
+    image(anhelo, 0, 0);
+  }
+} 
